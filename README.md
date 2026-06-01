@@ -1,3 +1,9 @@
+> ## 📌 Fork pinado (ciro-rosa) — apenas metadata de build
+>
+> Fork de [`xob0t/Gemini-API`](https://github.com/xob0t/Gemini-API) (por sua vez fork de [`HanaokaYuzu/Gemini-API`](https://github.com/HanaokaYuzu/Gemini-API)). A tag **`v1.19.3`** corresponde ao commit auditado `4402e52`. A **única** mudança em relação ao upstream é **metadata de build** (versão estática no lugar do `setuptools_scm`, para build reprodutível quando pinado via `uv`). **Nenhuma linha de código `.py` foi alterada.** Usado pelo wrapper [`ciro-rosa/gemini-webapi-mcp`](https://github.com/ciro-rosa/gemini-webapi-mcp). Licença conforme o `LICENSE` do repositório.
+>
+> ---
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/HanaokaYuzu/Gemini-API/master/assets/banner.png" width="55%" alt="Gemini Banner" align="center">
 </p>
