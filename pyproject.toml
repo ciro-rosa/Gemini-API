@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69", "setuptools_scm>=8"]
+requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -23,7 +23,9 @@ dependencies = [
     "orjson~=3.11.7",
     "pydantic~=2.12.5",
 ]
-dynamic = ["version"]
+# Static version for reproducible pinned builds (was setuptools_scm dynamic).
+# Corresponds to audited commit 4402e52. — ciro-rosa fork
+version = "1.19.3"
 
 [project.optional-dependencies]
 dev = ["ruff>=0.11"]
@@ -36,9 +38,6 @@ Issues = "https://github.com/HanaokaYuzu/Gemini-API/issues"
 where = ["src"]
 include = ["gemini_webapi"]
 
-[tool.setuptools_scm]
-version_scheme = "post-release"
-local_scheme = "no-local-version"
 
 [tool.ruff]
 line-length = 200
